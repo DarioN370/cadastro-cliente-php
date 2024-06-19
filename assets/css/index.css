@@ -1,0 +1,110 @@
+@import url('https://fonts.googleapis.com/css2?family=Krona+One&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root{
+    --fonte-principal: "Krona One", sans-serif;
+    --fonte-secundaria: "Montserrat", sans-serif;
+
+    --cor-principal: #898989;
+    --cor-secundaria: #000;
+    --cor-terceira: #fff;
+    --cor-quarta: #000000cb;
+
+    --tamanho-principal: 1.5rem;
+    --tamanho-secundario: 2.5rem;
+}
+
+/*gradient background*/
+body { 
+    animation: gradientAnimation 10s ease infinite;
+    background: linear-gradient(90deg, #ffffff 10%, #cfcfcf 40%, #c0c0c0 70%);
+    background-size: 400% 400%;
+    height: 100vh;
+}
+
+@keyframes gradientAnimation {
+    0% {
+        background-position: 0% 50%;
+    }
+    50% {
+        background-position: 100% 50%;
+    }
+    100% {
+        background-position: 0% 50%;
+    }
+}
+
+main{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    height: 100%;
+}
+
+.titulo{
+    display: none;
+    font-size: 10rem;
+    font-family: var(--fonte-secundaria);
+}
+
+#container-conteudo{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 150px;
+    padding: 50px 75px;
+    background: var(--cor-secundaria);
+    box-shadow: rgb(0, 0, 0) 0px 22px 70px 4px;
+    border-radius: 50px;
+}
+
+.letra-jap{
+    color: var(--cor-terceira);
+    font-size: 20rem;
+}
+
+.container-btn{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 80px;
+}
+
+.botao {
+    text-decoration: none;
+    border-radius: 30px;
+    padding: 20px 40px;
+    color: var(--cor-terceira);
+    font-size: var(--tamanho-principal);
+    font-family: var(--fonte-principal);
+    background: var(--cor-secundaria);
+    border: none;
+    cursor: pointer;
+    box-shadow: rgb(175, 175, 175) 0px 0px 35px;
+    text-align: center;
+    transition: 0.5s;
+    width: 100%;
+}
+
+.botao:hover{
+    box-shadow: rgb(255, 255, 255) 0px 0px 40px;
+}
+
+
+
+
+
+
+
+/* inicio do responsivo */
+@media only screen and (max-width: 730px) {
+
+}

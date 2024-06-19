@@ -1,0 +1,41 @@
+@import url('https://fonts.googleapis.com/css2?family=Krona+One&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root{
+    --fonte-principal: "Krona One", sans-serif;
+    --fonte-secundaria: "Montserrat", sans-serif;
+
+    --cor-principal: #898989;
+    --cor-secundaria: #000;
+    --cor-terceira: #fff;
+    --cor-quarta: #000000cb;
+
+    --tamanho-principal: 1.5rem;
+    --tamanho-secundario: 2.5rem;
+}
+
+/*gradient background*/
+body { 
+    animation: gradientAnimation 10s ease infinite;
+    background: linear-gradient(90deg, #ffffff 10%, #cfcfcf 40%, #c0c0c0 70%);
+    background-size: 400% 400%;
+    height: 100vh;
+}
+
+@keyframes gradientAnimation {
+    0% {
+        background-position: 0% 50%;
+    }
+    50% {
+        background-position: 100% 50%;
+    }
+    100% {
+        background-position: 0% 50%;
+    }
+}
