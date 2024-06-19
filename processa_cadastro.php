@@ -1,6 +1,6 @@
 <?php
 if($_SERVER["REQUEST_METHOD"] == "POST"){
-    // CONEXAO COM BANCO DE DADOS
+    // CONEXAO COM BANCO DE DADOS padrao
     $servername = "localhost";
     $username = "root";
     $password = "";
@@ -12,13 +12,13 @@ if($_SERVER["REQUEST_METHOD"] == "POST"){
         die("Erro na conexão com o banco e dados:" . $conn->connect_error);
     }
 
-    // captura os dados do formulario
+    // captura os dados do formulário e atribui os valores as suas respectivas variaveis 
     $nome = $_POST["nome"];
     $email = $_POST["email"];
     $telefone = $_POST["telefone"];
     $descricao = $_POST["descricao"];
 
-    // sql para inserir os dados coletados na tabela clientes
+    // sql para inserir os dados coletados na tabela clientes, ele vai inserir as variaveis, entao quando for fazer a alteração, vai alterar a variavel do respectivo ID
     $sql = "INSERT INTO tb_cliente (nome, email, telefone, descricao) VALUES ('$nome', '$email', '$telefone', '$descricao')";
 
     if($conn->query($sql) === TRUE) {
