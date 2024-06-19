@@ -22,13 +22,14 @@
 
 /*gradient background*/
 body { 
-    animation: gradientAnimation 10s ease infinite;
+    /* animation: gradientAnimation 2s ease infinite;
     background: linear-gradient(90deg, #ffffff 10%, #cfcfcf 40%, #c0c0c0 70%);
-    background-size: 400% 400%;
+    background-size: 400% 400%; */
+    background: #c0c0c0;
     height: 100vh;
 }
 
-@keyframes gradientAnimation {
+/* @keyframes gradientAnimation {
     0% {
         background-position: 0% 50%;
     }
@@ -38,7 +39,7 @@ body {
     100% {
         background-position: 0% 50%;
     }
-}
+} */
 
 main{
     display: flex;
