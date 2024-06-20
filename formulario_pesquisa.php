@@ -7,7 +7,7 @@
 </head>
 <body>
     <h1>Pesquisar cliente</h1>
-    <form method="GET" action="">
+    <form method="GET" action="pesquisa.php">
         <label for="termo">Digite uma palavra da pesquisa: </label>
         <input type="text" id="termo" name="termo"><br><br> 
         <input type="SUBMIT" value="pesquisar">

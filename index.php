@@ -16,6 +16,7 @@
                 <a class="botao"
                 href="formulario_cadastro.php">Cadastro</a>
                 <a class="botao" href="clientes.php">Clientes</a>
+                <a class="botao" href="formulario_pesquisa.php">Pesquisar</a>
             </div>
         </section>
     </main>
